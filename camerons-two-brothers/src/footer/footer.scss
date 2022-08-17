@@ -1,0 +1,46 @@
+@import '../variables';
+
+.footer {
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+  background: #2b8ab9;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    color:rgba(255,255,255,0.8);
+    text-decoration: none;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  #copyright {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media screen and (max-width: 425px) {
+    display: block;
+    text-align: center;
+
+    #copyright {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.footer-container {
+  height: 100%;
+  margin: 0 20px;
+  font-size: 14px;
+
+  span {
+    font-weight: bold;
+  }
+}

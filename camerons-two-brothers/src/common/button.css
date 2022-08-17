@@ -1,0 +1,41 @@
+.btn-generic {
+  position: relative;
+}
+
+.btn-generic button {
+  background: none;
+  border: none;
+}
+
+.btn-generic button:hover {
+  background: #999999;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-login {
+  margin-left: 50px;
+}
+
+.btn-login button {
+  color: black;
+  width: 100px;
+  height: 50px;
+}
+
+.btn-logout {
+  height: 100%;
+}
+
+.btn-logout button {
+  height: 100%;
+}
+
+.btn-invoices {
+  height: 100%;
+}
+
+.btn-invoices button {
+  height: 100%;
+}
+/*# sourceMappingURL=button.css.map */

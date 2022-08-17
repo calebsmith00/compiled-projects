@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACT,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,IAAI;EACZ,aAAa,EAAE,cAAc;EAC7B,UAAU,EAAE,mBAAmB;CAChC",
+    "sources": [
+        "separator.scss"
+    ],
+    "names": [],
+    "file": "separator.css"
+}

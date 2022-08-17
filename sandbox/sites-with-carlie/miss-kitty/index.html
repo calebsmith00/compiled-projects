@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Miss Kitty's</title>
+
+        <link rel="stylesheet" href="style/navbar.css">
+        <link rel="stylesheet" href="style/global.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Style+Script&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+
+        <!-- Background -->
+        <div class="bg">
+            <div class="darken"></div>
+            <img src="background.jpg">
+        </div>
+
+        <!-- Navbar -->
+        <div class="navbar">
+            <h1>Miss Kitty's</h1>
+
+            <!-- Links -->
+            <div class="navbar-links">
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#locations">Locations</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+
+        <!-- The main content container -->
+        <div class="home-container">
+            <h1 id="company-name">Miss Kitty's</h1>
+            <p id="company-subtitle">Cafe & Rescue</p>
+        </div>
+
+        <!-- Page content -->
+        <div class="page-content">
+            <!-- The about container -->
+            <div id="about" class="about-container">
+                <h1>About us</h1>
+                <p>Miss Kitty's Cafe & Rescue was created and built by Carlie Hurtt. She designed this project to keep cats like hers (Kitty, AKA Grandma) safe, cared for, and loved.</p>
+            </div>
+            
+            <!-- The cafe locations container -->
+            <div id="locations" class="locations-container">
+                <h1>Locations</h1>
+                <p>Use the map next to this page to find the closest location to you!</p>
+                <div id="map-container"><img src="google-map.jpg"></div>
+            </div>
+
+            <!-- The "contact us" container -->
+            <div id="contact" class="contact-container">
+                <h1>Contact us today!</h1>
+                <form class="contact-form-container">
+                    <label for="name"></label>
+                    <input type="text" name="name" placeholder="Your name">
+
+                    <label for="email"></label>
+                    <input type="email" name="email" placeholder="Your email address">
+
+                    <label for="message"></label>
+                    <textarea name="message" rows="4" placeholder="Your message here"></textarea>
+                    <div class="contact-form-buttons">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

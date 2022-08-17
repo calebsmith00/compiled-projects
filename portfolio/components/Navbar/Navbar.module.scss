@@ -1,0 +1,26 @@
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbarLogo {
+    margin: 20px;
+}
+
+.navbarLinks {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbarLink {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+}

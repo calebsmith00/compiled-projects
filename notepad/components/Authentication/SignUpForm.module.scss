@@ -1,0 +1,56 @@
+@import '../../styles/variables.scss';
+@import './authVariables.module.scss';
+
+.signUpContainer {
+    @include authContainer;
+}
+
+.signUpForm {
+    @include authForm;
+}
+
+
+.formInput {
+    @include authFormInput;
+}
+
+.btnContainer {
+    @include authButtonContainer;
+}
+
+.btn {
+    @include authButton;
+}
+
+.btnClear {
+    @include authButtonClear;
+}
+
+.btnSignUp {
+    background: $successBtn;
+
+    &:hover {
+        background: $successBtnHover;
+    }
+}
+
+.error {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.goodPassword {
+    border: 2px solid green;
+}
+
+.goodPassword:focus {
+    border: 2px solid green;
+}
+
+.badPassword {
+    border: 2px solid red;
+}
+
+.badPassword:focus {
+    border: 2px solid red;
+}

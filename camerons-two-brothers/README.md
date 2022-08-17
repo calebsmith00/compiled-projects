@@ -1,0 +1,1 @@
+This project's development has been delayed as I have yet to collaborate with the business owner to discuss any changes to the site, what niche features he would like included, or anything that would further progress this project. Stay up to date to see future improvements to this project.

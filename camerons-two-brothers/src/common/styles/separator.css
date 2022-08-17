@@ -1,0 +1,10 @@
+.separator {
+  z-index: 1;
+  margin: auto;
+  width: 80%;
+  height: 10px;
+  border-bottom: 2px solid grey;
+  -webkit-box-shadow: 0 4px 2px -2px gray;
+          box-shadow: 0 4px 2px -2px gray;
+}
+/*# sourceMappingURL=separator.css.map */

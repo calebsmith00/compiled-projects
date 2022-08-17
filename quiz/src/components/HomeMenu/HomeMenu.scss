@@ -1,0 +1,72 @@
+@import url('http://fonts.cdnfonts.com/css/borsok');
+$menuBackground:#00b6a8; 
+$btnLogin: #27e0e4;
+$btnSignup: #ffdc6a;
+$boxShadow: 6px 6px 3px 1px;
+$btnLoginShadow: #00969c;
+$btnSignupShadow: #ff9057;
+$searchBorder: 5px solid #27e0e4;
+$searchBorderRadius: 2px;
+$font: 'Borsok', sans-serif;
+
+.menu {
+    background: $menuBackground;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    order: 3;
+
+    color: white;
+    font-family: $font;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    text-align: center;
+    margin: 1rem 2rem;
+    padding: 0 3.5rem;
+    border: none;
+    color: white;
+    font-family: $font;
+    font-size: 3rem;
+    height: 100%;
+}
+
+.btn-login {
+    background: $btnLogin;
+    box-shadow: $boxShadow $btnLoginShadow;
+}
+
+.btn-signup {
+    background: $btnSignup;
+    box-shadow: $boxShadow $btnSignupShadow;
+}
+
+.search-container {
+    display: flex;
+    margin-top: 2rem;
+    width: 80%;
+    justify-content: flex-end;
+}
+
+.search-input {
+    padding: 1.2em;
+    border: $searchBorder;
+    border-radius: $searchBorderRadius;
+}
+
+.search-icon {
+    border: $searchBorder;
+    border-radius: $searchBorder;
+}
+
+.content-container {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 3rem;
+    text-shadow: 4px 2px 10px #777;
+}

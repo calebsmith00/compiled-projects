@@ -1,0 +1,157 @@
+.wrapper {
+  background: #e5f2e5;
+  color: #000;
+}
+
+.contactContainer {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e5f2e5));
+  background: linear-gradient(#f5f5f5, #e5f2e5);
+}
+
+.contactContainer h1 {
+  text-align: center;
+  font-size: 50px;
+  color: #000;
+  padding: 20px 0;
+}
+
+.fieldContainer p {
+  margin: 0;
+}
+
+.formContainer {
+  display: block;
+  margin: 0 auto;
+  padding: 0 0 10px 10px;
+  max-width: 50%;
+}
+
+.buttonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-transition: opacity 0.6s linear;
+  transition: opacity 0.6s linear;
+}
+
+.buttonContainer button {
+  color: #000;
+  font-weight: 700;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.buttonContainer button:hover {
+  cursor: pointer;
+}
+
+.buttonContainer #submit {
+  background: -webkit-gradient(linear, left top, left bottom, from(#22BB33), to(#1b9528));
+  background: linear-gradient(to bottom, #22BB33, #1b9528);
+  color: #fff;
+  padding: 10px 30px;
+}
+
+.buttonContainer #submit:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#1b9528), to(#136e1c));
+  background: linear-gradient(to bottom, #1b9528, #136e1c);
+}
+
+.buttonContainer #submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: -webkit-gradient(linear, left top, left bottom, from(#22BB33), to(#1b9528)) !important;
+  background: linear-gradient(to bottom, #22BB33, #1b9528) !important;
+}
+
+.buttonContainer #clear {
+  background: -webkit-gradient(linear, left top, left bottom, from(#F32013), to(#CA0B00));
+  background: linear-gradient(to bottom, #F32013, #CA0B00);
+  color: #fff;
+  margin-left: 10px;
+}
+
+.buttonContainer #clear:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#CA0B00), to(#a10800));
+  background: linear-gradient(to bottom, #CA0B00, #a10800);
+}
+
+.buttonContainer #clear:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F32013), to(#CA0B00)) !important;
+  background: linear-gradient(to bottom, #F32013, #CA0B00) !important;
+}
+
+#testCharges {
+  text-align: center;
+  font-size: 16px;
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+
+#messageSent {
+  padding: 10px;
+}
+
+.nameInput {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px 0;
+  border: 2px solid rgba(172, 171, 171, 0.795);
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+  outline: none;
+}
+
+.nameInput:hover, .nameInput:focus {
+  background: rgba(9, 36, 84, 0.05);
+}
+
+.emailInput {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px 0;
+  border: 2px solid rgba(172, 171, 171, 0.795);
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+  outline: none;
+}
+
+.emailInput:hover, .emailInput:focus {
+  background: rgba(9, 36, 84, 0.05);
+}
+
+.messageInput {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px 0;
+  border: 2px solid rgba(172, 171, 171, 0.795);
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+  outline: none;
+}
+
+.messageInput:hover, .messageInput:focus {
+  background: rgba(9, 36, 84, 0.05);
+}
+
+b {
+  color: red;
+}
+/*# sourceMappingURL=contact.css.map */

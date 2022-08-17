@@ -1,0 +1,127 @@
+@import '../variables';
+
+@mixin menu {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  right: 55px;
+  border: 3px solid darkgrey;
+  box-shadow: 1px 1px black;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  height: 200px;
+  z-index: 2;
+}
+
+.nav {
+  margin-top: 5px;
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: $bgColor;
+  z-index: 2;
+  height: 130px;
+  border-bottom: 3px solid black;
+  border-spacing: 5px;
+  
+  @media screen and (max-width: 1140px) and (min-width: 700px) {
+    font-size: 14px;
+  }
+}
+
+.nav-buttons {
+  width: 50%;
+  height: 100%;
+  margin: 0px 10px;
+  display: flex;
+  position: absolute;
+  right: 0;
+
+  @media screen and (max-width: 425px) {
+    visibility: hidden;
+  }
+}
+
+.menu {
+  visibility: hidden;
+  position: absolute;
+  right: 20px;
+  top: 35px;
+  @media screen and (max-width: 425px) {
+    visibility: initial;
+  }
+}
+
+.menu-container {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+  @media screen and (max-width: 425px) {
+    z-index: 2;
+  }
+}
+
+#logo {
+  background-image: url('../img/gardening-30-512.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  @media screen and (max-width: 425px) {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    padding-left: 0px;
+  }
+}
+
+#company {
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+
+.menu-closed {
+  visibility: hidden;
+  @include menu;
+}
+
+.menu-open {
+  visibility: visible;
+  @include menu;
+  animation: .5s menuAnimOpen ease-in;
+  padding: 10px 0px;
+
+  a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    &:hover {
+      background: darken($bgColor, 40%);
+      color: white;
+      cursor: pointer;
+    }
+  }
+  
+}
+
+@keyframes menuAnimOpen {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: initial;
+  }
+}

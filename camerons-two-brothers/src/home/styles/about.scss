@@ -1,0 +1,59 @@
+@import '../../variables';
+
+.about-container {
+  background: linear-gradient(#f5f5f5, #e5f2e5);
+  width: 100%;
+  padding: 30px 0;
+
+  p {
+    width: 60%;
+    line-height: 40px;
+  }
+
+  h1 {
+    margin-left: 35px;
+  }
+
+  .text-content {
+    margin-left: 40px;
+    z-index: 2;
+  }
+
+}
+
+#underline {
+  text-decoration: underline;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#mower-img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url('../../img/twoBrothers.png');
+  width: 20%;
+  height: 170px;
+  margin-right: 10%;
+
+  @media screen and (max-width: 425px) {
+    visibility: hidden;
+    right: 0;
+  }
+}
+
+#learn-more {
+  padding: 10px 50px;
+  height: 100px;
+  width: 45%;
+  position: relative;
+
+  @media screen and (max-width: 425px) {
+    width: 30%;
+    position: absolute;
+  }
+}

@@ -1,0 +1,19 @@
+.navbar {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-links {
+    margin: 0 10px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    padding: 0 10px;
+    color: white;
+    font-size: 25px;
+}

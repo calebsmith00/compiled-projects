@@ -1,0 +1,109 @@
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.addDarkLayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    z-index: 1;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 100%;   
+}
+
+.introduction h1 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 60px;
+}
+
+.introduction p {
+    line-height: 40px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.biography {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+.photoOfMe {
+    width: 43%;
+    padding-right: 15px;
+    display: flex;
+}
+
+.photoOfMe img {
+    width: 325px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.biographyParagraphs {
+    width: 50%;
+}
+
+.showProjects {
+    position: absolute;
+    bottom: 15px;
+}
+
+.showProjects a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 1024px) {
+    .biography {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .introduction {
+        height: 100%;
+    }
+
+    .introduction h1 {
+        font-size: 30px;
+    }
+
+    .introduction p {
+        line-height: 25px;
+    }
+
+    .biography {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .photoOfMe {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .biographyParagraphs {
+        width: 100%;
+    }
+
+    .showProjects p {
+        display: none;
+    }
+}

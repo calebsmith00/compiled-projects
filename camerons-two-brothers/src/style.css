@@ -1,0 +1,17 @@
+* {
+  margin: 0px 0px;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: white;
+  color: black;
+  min-height: 100%;
+  background: -webkit-gradient(linear, left top, right bottom, from(#f5f5f5), to(#eee));
+  background: linear-gradient(to bottom right, #f5f5f5, #eee);
+}
+/*# sourceMappingURL=style.css.map */

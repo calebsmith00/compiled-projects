@@ -1,0 +1,40 @@
+@import '../../variables';
+
+.btn-generic {
+  position: relative;
+
+  button {
+    background: none;
+    border: none;
+
+    &:hover {
+      background: darken($bgColor, 40%);
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+
+.btn-login {
+  margin-left: 50px;
+
+  button {
+    color: $textColor;
+    width: 100px;
+    height: 50px;
+  }
+}
+
+.btn-logout {
+  height: 100%;
+  button {
+    height: 100%;
+  }
+}
+
+.btn-invoices {
+  height: 100%;
+  button {
+    height: 100%;
+  }
+}

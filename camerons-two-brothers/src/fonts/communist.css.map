@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,UAAU;EACR,WAAW,EAAE,SAAS;EACtB,GAAG,EAAE,sBAAsB",
+    "sources": [
+        "communist.scss"
+    ],
+    "names": [],
+    "file": "communist.css"
+}

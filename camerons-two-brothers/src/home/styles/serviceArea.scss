@@ -1,0 +1,11 @@
+@import '../../variables';
+
+.service-area {
+    padding: $contentPadding;
+    width: $contentWidth;
+    margin: 20px auto;
+
+    p {
+        padding: 50px;
+    }
+}

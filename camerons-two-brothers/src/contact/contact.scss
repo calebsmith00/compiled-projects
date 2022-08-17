@@ -1,0 +1,129 @@
+
+@import '../variables';
+
+@mixin inputBox($height) {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px 0;
+  border: 2px solid rgba(172, 171, 171, 0.795);
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 18px;
+  outline: none;
+
+  &:hover, &:focus {
+    background: rgba(9,36,84,0.05);
+  }
+}
+
+.wrapper {
+  background: #e5f2e5;
+  color: #000;
+}
+
+.contactContainer { 
+  background: linear-gradient(#f5f5f5, #e5f2e5);
+  
+  h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #000;
+    padding: 20px 0;
+  }
+}
+
+.fieldContainer {
+  p {
+    margin: 0;
+  }
+}
+
+.formContainer {
+  display: block;
+  margin: 0 auto;
+  padding: 0 0 10px 10px;
+  max-width: 50%;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+
+  transition: opacity 0.6s linear;
+
+  button {
+    color: #000;
+    font-weight: 700;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  #submit {
+    background: linear-gradient(to bottom, #22BB33, #1b9528);
+    color: #fff;
+    padding: 10px 30px;
+
+    &:hover {
+      background: linear-gradient(to bottom, #1b9528, #136e1c);
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      background: linear-gradient(to bottom, #22BB33, #1b9528) !important;
+    }
+  }
+
+  #clear {
+    background: linear-gradient(to bottom, #F32013,  #CA0B00);
+    color: #fff;
+    margin-left: 10px;
+
+    &:hover {
+      background: linear-gradient(to bottom, #CA0B00,  #a10800);
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      background: linear-gradient(to bottom, #F32013,  #CA0B00) !important;
+    }
+  }
+}
+
+#testCharges {
+  text-align: center;
+  font-size: 16px;
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+
+#messageSent {
+  padding: 10px;
+}
+
+.nameInput {
+  @include inputBox(20px);
+}
+
+.emailInput {
+  @include inputBox(20px);
+}
+
+.messageInput {
+  @include inputBox(100px);
+}
+
+b {
+  color: red;
+}

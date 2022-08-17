@@ -1,0 +1,174 @@
+@import '../../variables';
+
+@mixin arrowContainer {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin defineArrow {
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  &:hover {
+    cursor: pointer;
+
+    p {
+      color: black;
+    }
+  }
+
+  -webkit-tap-highlight-color: transparent;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  p {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    user-select: none;
+  }
+}
+
+@mixin defineImage {
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 110% 80%;
+
+  @media screen and (max-width: 425px) {
+    object-position: 100%;
+  }
+}
+
+$activeColor: darken($bgColor, 40%);
+
+.images-container {
+  margin: 40px auto;
+  z-index: 1;
+  height: 60vh;
+  width: 70vw;
+  background: darken($bgColor, 20%);
+  box-shadow: 1px 3px 5px 3px darkgrey;
+  position: relative;
+
+  #image-descriptor {
+    -webkit-user-select: none; 
+    -moz-user-select: none;     
+    -ms-user-select: none;      
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    margin: auto;
+    font-family: $defaultFont;
+    font-size: 20px;
+    color: white;
+  }
+
+  #bullet-point-container {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 20%;
+  }
+
+  #image-bulleted-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+    margin: 0 auto;
+    position: relative;
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    .image-bullet {
+      width: 10px;
+      height: 10px;
+      list-style-position: inside;
+      position: relative;
+      top: 20px;
+      font-size: 30px;
+      color: transparent;
+      border: 1px solid lightgrey;
+      border-radius: 20px;
+      margin: 0 2px;
+      -webkit-tap-highlight-color: transparent;
+
+      &:hover {
+        cursor: pointer;
+        background: $activeColor;
+      }
+    }
+  }
+
+  .active-true {
+    background: $activeColor;
+  }
+
+  #container-left {
+    @include arrowContainer;
+    position: absolute;
+    top: 0;
+    left: 10px;
+  }
+
+  #container-right {
+    @include arrowContainer;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    align-items: flex-end;
+  }
+
+  .arrow-left {
+    @include defineArrow;
+  }
+
+  .arrow-right {
+    @include defineArrow;
+  }
+
+  .images {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.582);
+    position: relative;
+    animation: 2s lawnTransition;
+    animation-fill-mode: fowards; 
+
+    .image {
+      @include defineImage; 
+      visibility: hidden;
+    }
+
+    .image-active {
+      visibility: visible;
+    }
+  }
+}
+
+@keyframes lawnTransition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}

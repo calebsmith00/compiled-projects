@@ -1,0 +1,48 @@
+.removeOpaqueText {
+  z-index: 1;
+}
+
+.pageFold {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  height: 100%;
+}
+
+.belowFold {
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.belowFold div {
+  padding: 30px;
+  width: 50%;
+}
+
+.pageBody h1 {
+  font-size: 50px;
+}
+
+.backgroundContainer {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  background:rgb(0, 0, 0);
+}
+
+.background {
+  opacity: .4;
+}
+
+.about {
+  color: rgb(0, 0, 0);
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

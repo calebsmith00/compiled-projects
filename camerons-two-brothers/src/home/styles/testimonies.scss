@@ -1,0 +1,86 @@
+@import '../../variables';
+
+.testimonies-container {
+  background: #f5f5f5;
+  color: #000;
+  text-align: center;
+
+  h1 {
+    text-align: center;
+    font-size: 50px;
+    padding: 30px 0;
+  }
+}
+
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  align-content: center;
+ 
+  
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.review-card {
+  color: rgba(0,0,0, 0.75);
+  margin: 20px 80px 50px 80px;
+  border-radius: 5px;
+  padding: 30px;
+  transition: 0.6s;
+
+  &:hover {
+    cursor: default;
+    text-shadow: 1px 1px #f5f5f5;
+    transform: scale(1.1);
+  }
+}
+
+.quote {
+  quotes: "“" "”";
+}
+
+.quote:before, .quote:after {
+  font-size: 20px;
+  margin: 0 1px;
+}
+
+.quote:before {
+  content: open-quote;
+ 
+}
+
+.quote:after {
+  content: close-quote;
+}
+
+.review-avatar {
+  width: 100px;
+  height: 100px;
+}
+
+.reviewer {
+  text-align: right;
+  margin-top: 10px;
+}
+
+#stars {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.description {
+  width: 90%;
+  margin: 10px auto;
+}
+
+.checked {
+  color: gold;
+}
